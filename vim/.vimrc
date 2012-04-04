@@ -8,6 +8,7 @@ set autoindent
 set hlsearch
 set ignorecase
 set paste
+set ruler
 
 colorscheme desert
 
