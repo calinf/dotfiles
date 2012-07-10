@@ -13,7 +13,8 @@ set ruler
 set foldnestmax=1
 set foldmethod=indent
 
-colorscheme desert
+" Make search results appear in the middle of the screen.
+set scrolloff=5
 
 " This command deletes white spaces aster save.
 autocmd BufWritePre *.* :%s/\s\+$//e
@@ -22,10 +23,13 @@ autocmd BufWritePre *.* :%s/\s\+$//e
 nnoremap / /\v
 vnoremap / /\v
 
-" Enables filetype detection and filetype specific plugins
+" Enables filetype detection and filetype specific plugins.
 filetype on
 filetype plugin on
 
 " Highlights the background for text that goes over the 80 column limit.
 highlight OverLength ctermbg=yellow ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
+
+" Changes the color scheme.
+colorscheme desert
