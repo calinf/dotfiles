@@ -28,8 +28,7 @@ filetype on
 filetype plugin on
 
 " Highlights the background for text that goes over the 80 column limit.
-highlight OverLength ctermbg=yellow ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+set colorcolumn=80
 
 " Changes the color scheme.
 colorscheme desert
