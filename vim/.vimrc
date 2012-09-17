@@ -28,9 +28,9 @@ vnoremap / /\v
 filetype on
 filetype plugin on
 
+" Changes the color scheme.
+colorscheme desert
+
 " Highlights the background for text that goes over the 80 column limit.
 set colorcolumn=80
 highlight ColorColumn ctermbg=blue
-
-" Changes the color scheme.
-colorscheme desert
