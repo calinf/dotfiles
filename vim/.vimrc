@@ -10,6 +10,7 @@ set ignorecase
 set paste
 set ruler
 
+" Fold away (hide) parts of the file.
 set foldnestmax=1
 set foldmethod=indent
 
@@ -29,6 +30,7 @@ filetype plugin on
 
 " Highlights the background for text that goes over the 80 column limit.
 set colorcolumn=80
+highlight ColorColumn ctermbg=blue
 
 " Changes the color scheme.
 colorscheme desert
