@@ -34,3 +34,16 @@ colorscheme desert
 " Highlights the background for text that goes over the 80 column limit.
 set colorcolumn=80
 highlight ColorColumn ctermbg=blue
+
+" Vundle
+set nocompatible
+filetype off
+filetype plugin indent on
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/syntastic'
