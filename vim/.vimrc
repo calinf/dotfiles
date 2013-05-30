@@ -40,6 +40,9 @@ set nocompatible
 filetype off
 filetype plugin indent on
 
+" Color syntax highlighter
+syntax on
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
