@@ -48,3 +48,4 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 " Requires jedi
 Bundle 'davidhalter/jedi-vim'
+Bundle 'kien/ctrlp.vim'
