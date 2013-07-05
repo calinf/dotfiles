@@ -24,10 +24,6 @@ autocmd BufWritePre *.* :%s/\s\+$//e
 nnoremap / /\v
 vnoremap / /\v
 
-" Enables filetype detection and filetype specific plugins.
-filetype on
-filetype plugin on
-
 " Changes the color scheme.
 colorscheme desert
 
@@ -35,18 +31,20 @@ colorscheme desert
 set colorcolumn=80
 highlight ColorColumn ctermbg=blue
 
+" Color syntax highlighting
+syntax on
+
 " Vundle
 set nocompatible
 filetype off
 filetype plugin indent on
 
-" Color syntax highlighter
-syntax on
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-
 Bundle 'tpope/vim-fugitive'
+" Requires flake8
 Bundle 'scrooloose/syntastic'
+" Requires jedi
+Bundle 'davidhalter/jedi-vim'
