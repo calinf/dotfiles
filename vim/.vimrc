@@ -7,7 +7,6 @@ set nowrap
 set autoindent
 set hlsearch
 set ignorecase
-set paste
 set ruler
 
 " Fold away (hide) parts of the file.
@@ -16,6 +15,8 @@ set foldmethod=indent
 
 " Make search results appear in the middle of the screen.
 set scrolloff=5
+
+set paste
 
 " This command deletes white spaces aster save.
 autocmd BufWritePre *.* :%s/\s\+$//e
@@ -44,8 +45,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'kien/ctrlp.vim'
 " Requires flake8
 Bundle 'scrooloose/syntastic'
-" Requires jedi
-Bundle 'davidhalter/jedi-vim'
-Bundle 'kien/ctrlp.vim'
