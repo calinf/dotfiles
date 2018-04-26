@@ -42,8 +42,8 @@ call vundle#begin()
 
 Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-fugitive'
-Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'lervag/file-line'
 
 call vundle#end()
 filetype plugin indent on
