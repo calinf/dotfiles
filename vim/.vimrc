@@ -33,6 +33,10 @@ highlight ColorColumn ctermbg=blue
 " Color syntax highlighting
 syntax on
 
+" Save as admin
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+command Wq :execute ':W' | :q
+
 " Vundle
 set nocompatible
 filetype off
